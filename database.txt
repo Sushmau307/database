@@ -1,0 +1,53 @@
+
+
+
+CREATE TABLE Employee(empid int NOT NULL,
+                      empname varchar(20) NOT NULL,
+                      contact int,age int,
+                      DOB Date,
+                      licence_no int,
+                      passport_no int,
+                      joining_date Date,
+                      dept_no int,
+                      location varchar(20),
+                      primary key(empid),
+                      foreign key(dept_no)references Department(dept_no));
+
+CREATE TABLE Depatment(Dept_no int,Dept_name varchar(20),Primary key(Dept_no));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE Employee(EMPID INT NOT NULL,EMPNAME VARCHAR(2) NOT NULL,CONTACT INT,AGE INT,DOB DATE,LICENCE_NO INT,PASSPORT_NO INT,JOINING_DATE DATE,DEPARTMENT VARCHAR,LOCATION VARCHAR,PRIMARY KEY(EMPID));
+ 
+
+CREATE TABLE DEPARTMENT(DEPT_NO,DEPT_NAME,PRIMARY KEY(DEPT_NO));
